@@ -4,6 +4,7 @@ import './index.css'
 
 import First from './components/basic/First'
 import WithParameter from './components/basic/WithParameter'
+import Fragment from './components/basic/Fragment'
 
 const tag = <strong>Olá React!!!</strong>
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
             student="André Luis Moreira"
             score={7.2}
         />
+        <Fragment></Fragment>
     </div>, 
     document.getElementById('root')
 )
