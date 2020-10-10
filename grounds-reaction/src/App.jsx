@@ -4,7 +4,7 @@ import First from './components/basic/First'
 import WithParameter from './components/basic/WithParameter'
 import Fragment from './components/basic/Fragment'
 
-export default function App(props) {
+export default (props) => {
     return (
         <div id="app"> 
         <h1>Fundamentos React</h1>
