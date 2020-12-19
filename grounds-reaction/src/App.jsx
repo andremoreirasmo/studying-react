@@ -1,6 +1,10 @@
 import './App.css'
 import React from 'react'
 
+import ProductTable from './components/Repetition/ProductTable'
+import StudentList from './components/Repetition/StudentList'
+import Family from './components/basic/Family'
+import FamilyMember from './components/basic/FamilyMember'
 import First from './components/basic/First'
 import WithParameter from './components/basic/WithParameter'
 import Fragment from './components/basic/Fragment'
@@ -13,6 +17,22 @@ export default () => (
         <br></br>
 
         <div className="Cards">
+            <Card title="#07 - Desafio Repetição" color="#9BC53D">
+                <ProductTable />
+            </Card>
+
+            <Card title="#06 - Repetição" color="#5BC0EB">
+                <StudentList />
+            </Card>
+
+            <Card title="#05 - Componentes com filho" color="#3D405B">
+                <Family lastname="Ferreira">
+                    <FamilyMember name="Pedro" />
+                    <FamilyMember name="ana" />
+                    <FamilyMember name="Gustavo" />
+                </Family>
+            </Card>
+
             <Card title="#04 - Desafio Aleatório" color="#FA6900">
                 <Random min={10} max={60} />
             </Card>
