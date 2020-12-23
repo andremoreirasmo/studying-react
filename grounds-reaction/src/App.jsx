@@ -1,8 +1,12 @@
 import './App.css'
 import React from 'react'
 
-import ProductTable from './components/Repetition/ProductTable'
-import StudentList from './components/Repetition/StudentList'
+import FatherIndirect from "./components/communication/FatherIndirect"
+import FatherDirect from "./components/communication/FatherDirect"
+import InfoUser from './components/conditional/InfoUser'
+import EvenOrOdd from './components/conditional/EvenOrOdd'
+import ProductTable from './components/repetition/ProductTable'
+import StudentList from './components/repetition/StudentList'
 import Family from './components/basic/Family'
 import FamilyMember from './components/basic/FamilyMember'
 import First from './components/basic/First'
@@ -17,6 +21,21 @@ export default () => (
         <br></br>
 
         <div className="Cards">
+            <Card title="#10 - Comunicação indireta" color="#7B7554">
+                <FatherIndirect />
+            </Card>
+
+            <Card title="#09 - Comunicação direta" color="#17183B">
+                <FatherDirect />
+            </Card>
+
+            <Card title="#08 - Renderização Condicional" color="#83BCA9">
+                <EvenOrOdd number={20} />
+                <EvenOrOdd number={21} />
+                <InfoUser user={{name: 'André'}} />
+                <InfoUser user={{email: 'a@teste.com'}} />
+            </Card>
+
             <Card title="#07 - Desafio Repetição" color="#9BC53D">
                 <ProductTable />
             </Card>

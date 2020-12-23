@@ -16,7 +16,7 @@ export default props => {
         <tbody>
           {products.map((product, i) => {
             return (
-              <tr className={i % 2 == 0 ? 'pair': ''} key={product.id}>
+              <tr className={i % 2 === 0 ? 'even': ''} key={product.id}>
                 <td>{product.id}</td>
                 <td>{product.name}</td>
                 <td>R$ {product.price.toFixed(2).replace('.', ',')}</td>
