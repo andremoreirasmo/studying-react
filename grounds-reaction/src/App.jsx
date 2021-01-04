@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 
+import Mega from './components/mega/Mega'
 import Counter from './components/counter/Counter'
 import Input from "./components/form/Input"
 import FatherIndirect from "./components/communication/FatherIndirect"
@@ -23,6 +24,10 @@ export default () => (
         <br></br>
 
         <div className="Cards">
+            <Card title="#13 - mega" color="#3B3561">
+                <Mega lenght={8}/>
+            </Card>
+
             <Card title="#12 - Contador" color="#FFE0B5">
                 <Counter initialNumber={10}/>
             </Card>
