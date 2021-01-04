@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react'
 
+import Counter from './components/counter/Counter'
+import Input from "./components/form/Input"
 import FatherIndirect from "./components/communication/FatherIndirect"
 import FatherDirect from "./components/communication/FatherDirect"
 import InfoUser from './components/conditional/InfoUser'
@@ -21,6 +23,14 @@ export default () => (
         <br></br>
 
         <div className="Cards">
+            <Card title="#12 - Contador" color="#FFE0B5">
+                <Counter initialNumber={10}/>
+            </Card>
+
+            <Card title="#11 - Componente controlado (Input)" color="#904E55">
+                <Input />
+            </Card>
+
             <Card title="#10 - Comunicação indireta" color="#7B7554">
                 <FatherIndirect />
             </Card>
